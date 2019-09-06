@@ -1,4 +1,4 @@
-<h2 align="center">Object.{keys,values}方法随笔</h2>
+<h2 align="center">Object.{keys,values,assign}方法随笔</h2>
 
 ## for...in 语句
 
@@ -86,5 +86,23 @@ console.log(Object.values('foo'));        // ['f', 'o', 'o']
 包含该属性。
 
 
+## Object.assign()
 
+Object.assign() 方法用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
 
+```
+const obj1 = { a: 1, b: 2, c: 4 };
+
+const obj2 = { a: 2, b: 4, c: 4, d: 6 };
+
+const obj3 = Object.assign(obj1, obj2);
+
+console.log(obj3);                     // { a: 2, b: 4, c: 4, d: 6 }
+
+// ... 展开符同样可以实现相同效果
+const obj4 = {...obj1, ...obj2};
+
+console.log(obj4);                     // { a: 2, b: 4, c: 4, d: 6 }
+```
+
+***注：*** 为响应函数式编程，推荐使用 ... 展开操作符。
