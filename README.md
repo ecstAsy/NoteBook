@@ -1,4 +1,4 @@
-<h2 align="center">日常随笔</h2>
+<h2 align="center">前端记录</h2>
 
 ## JavaScript
 
