@@ -32,3 +32,7 @@ const obj2 = { a: 2, b: 4, c: 4, d: 6 };
 const obj3 = Object.assign(obj1, obj2);
 console.log(obj3)
 console.log({ ...obj1, ...obj2 })
+
+localStorage.setItem('userId', 1);
+localStorage.getItem('userId');
+localStorage.removeItem('userId');
