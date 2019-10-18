@@ -10,6 +10,7 @@
 - <a href='/note/JavaScript/JS-Object.md'>Object（对象方法）</a>
 - <a href='/note/JavaScript/JS-RegExp.md'>RegExp（常用正则表达式）</a>
 - <a href='/note/JavaScript/JS-throttle&debounce.md'>Throttle&Debounce（函数节流和防抖）</a>
+- <a href='/note/JavaScript/JS-ArrayToObject.md'>数组转对象</a>
 - <a href='/note/JavaScript/JS-study.md'>冷知识点积累</a>
 
 
