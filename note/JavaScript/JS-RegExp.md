@@ -60,3 +60,25 @@
 /^\w+$/
 ```
 
+#### 正则匹配的两种方式
+
+***match***
+
+```
+var str = "Is is the cost of of gasoline going up up";
+var patt1 = /\b([a-z]+) \1\b/ig;
+if (str.match(patt1)) {
+  console.log('str 里面存在对应的字符串！')
+}
+```
+
+***test***
+
+```
+var str = "Is is the cost of of gasoline going up up";
+var patt1 = /\b([a-z]+) \1\b/ig;
+
+if(patt1.test(str)) {
+  console.log('str 里面存在对应的字符串！')
+}
+```
