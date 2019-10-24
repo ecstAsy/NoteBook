@@ -36,6 +36,6 @@ const CityStr = '北京,上海,广州,深圳';
 
 const Citys = CityStr.split(',');
 
-console.log(Citys)         //  [ '北京', '上海', '广州', '深圳' ]
+console.log(Citys);         //  [ '北京', '上海', '广州', '深圳' ]
 ```
 
