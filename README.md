@@ -19,6 +19,7 @@
 
 - <a href='/note/React/context.md'>Context使用</a>
 - <a href='/note/React/input-ref-focus.md'>Ref使用</a>
+- <a href='/note/React/Switch.md'>Switch使用</a>
 
 
 ## Taro
