@@ -56,6 +56,33 @@ git merge branch_name
 
 ```
 
+## 撤销本地commit
+
+***如果执行完commit后，想撤回commit，怎么办？***
+
+```
+// 撤销了你的commit操作，仍然保留您写的代码
+git reset --soft HEAD^
+```
+
+***HEAD^*** 的意思是上一个版本，也可以写成HEAD~1
+
+如果你进行了2次commit，想都撤回，可以使用HEAD~2
+
+***--mixed*** 
+不删除工作空间改动代码，撤销 ***commit***，并且撤销 ***git add .*** 操作
+
+***--soft*** 
+不删除工作空间改动代码，撤销 ***commit***，不撤销 ***git add .***
+
+***--hard*** 
+删除工作空间改动代码，撤销 ***commit***，撤销 ***git add .***
+
+***如果commit注释写错了***
+```
+git commit --amend
+```
+
 ## 版本回退
 
 ```
