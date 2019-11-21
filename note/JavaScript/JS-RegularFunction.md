@@ -51,6 +51,24 @@ console.log(newStudents);
 // [ { name: 'Tom', age: 15 }, { name: 'Lily', age: 18 }, { name: 'Bob', age: 19 }, { name: 'Mary', age: 25 } ]
 ```
 
+***new Set():*** 数组去重
+
+```
+// 数组元素类型一致
+const Arry = [1, 2, 4, 3, 1, 2, 3, 4, 6];
+
+let Arrys = [...new Set(Arry)];
+
+console.log(Arrys);       // [ 1, 2, 4, 3, 6 ]
+
+// 数组元素不一致
+const Arrys = [1, 2, 4, 3, '1', 2, '3', 4, 6];
+
+let Arry = [...new Set(Arrys)];
+
+console.log(Arry);        // [ 1, 2, 4, 3, '1', '3', 6 ]
+```
+
 ### String
 
 ***split():*** 字符串转数组
