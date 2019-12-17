@@ -1,5 +1,12 @@
 <h2 align="center">javaScript 零散知识点</h2>
 
+## Js 的数据类型
+
+***简单数据类型：*** Number、String、Boolean、undefind、null
+***复杂数据类型：*** 数组、函数、对象
+
+
+
 ## Promise 构造函数是同步执行还是异步执行，then 方法是同步执行还是异步执行？
 
 ```
