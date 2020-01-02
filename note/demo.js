@@ -90,3 +90,17 @@ getName();                 // 1
 new Foo.getName();         // 2
 new Foo().getName();       // 3
 new new Foo().getName();   // 3
+
+
+
+class Students {
+  static job = 'student';
+}
+
+console.log(Students)
+
+class Tom extends Students {
+  static name = 'Tom'
+}
+
+console.log(Tom.job)
