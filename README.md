@@ -38,7 +38,7 @@
 ## Git
 
 - <a href='/note/Git/git命令.md'>Git常用命令</a>
-- <a href='/note/Git/git命令.md'>Git常见报错</a>
+- <a href='/note/Git/git报错.md'>Git常见报错</a>
 
 
 ## Tools
