@@ -24,6 +24,8 @@
 
 ## Plugin
 
+- <a href='/note/Plugin/Web-Excel.md'>前端对Excel的处理</a>
+
 ## Taro
 
 - <a href='/note/Taro/Taro&Mock.md'>Taro&Mock配置</a>
