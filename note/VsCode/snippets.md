@@ -1,0 +1,266 @@
+<h2 align="center"> Vscode 代码片段配置记录</h2>
+
+### 配置流程
+
+***汉化版本：（zh-cn）***
+[-] 文件
+[-] 首选项
+[-] 用户代码片段
+[-] javascript.json
+
+
+***English：（en-us）***
+[-] File
+[-] Preferences
+[-] User Snippets
+[-] javascript.json
+
+```
+{
+  // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  "import": {
+    "prefix": "import 导入资源",
+    "body": "import Name from '';",
+  },
+  "react-class-comp": {
+    "prefix": "React Class Component",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "class ${1:CompName} extends Component {",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>page${1:CompName}</div>",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:Compname}"
+    ],
+    "description": "React Class 类组件",
+  },
+  "react-function-comp": {
+    "prefix": "React Function Component",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${1:CompName} = ({ ...props }) => {",
+      "",
+      "\treturn (",
+      "\t\t<div className='page-${2:CompName}'>${3:CompName}</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${4:CompName}"
+    ],
+    "description": "React 函数式组件",
+  },
+  "react-html-func-comp": {
+    "prefix": "React Html Function Component",
+    "body": [
+      "// 注释",
+      "const ${1:CompName} = (props) =>",
+      "\t<div>${2:CompName}</div>"
+    ],
+    "description": "React 函数式组件",
+  },
+  "dva-connect-store": {
+    "prefix": "Dva Connect Store",
+    "body": [
+      "@connect(({ ${1:StoreName}, loading }) => ({",
+      "\t...${2:StoreName},",
+      "\tloading: loading.models.${3:StoreName},",
+      "}))",
+      "$4"
+    ],
+    "description": "dva 关联 store",
+  },
+  "dva-dispatch-store": {
+    "prefix": "Dva Dispatch Store",
+    "body": [
+      "dispatch({",
+      "\ttype: '${1:StorName}',",
+      "\tpayload: {",
+      "",
+      "\t},",
+      "})"
+    ],
+    "description": "dva 调用 store",
+  },
+  "dva-model-js": {
+    "prefix": "Dva Model Js",
+    "body": [
+      "// import { Api } from './service';",
+      "",
+      "export default {",
+      "\tnamespace: '${1:modelName}',",
+      "\tstate: {",
+      "",
+      "\t},",
+      "\tsubscriptions: {",
+      "\t\tsetup({ dispatch, history }) {",
+      "\t\t\thistory.listen(async location => {",
+      "\t\t\t\tconst { pathname } = location;",
+      "\t\t\t\tif (pathname === '/${2:modelName}') {",
+      "\t\t\t\t\tconsole.log(pathname);",
+      "\t\t\t\t}",
+      "\t\t\t})",
+      "\t\t}",
+      "\t},",
+      "\teffects: {",
+      "\t\t* list({ payload ={} }, { call }) {",
+      "\t\t\tconst { data } = yield call(list, payload);",
+      "\t\t\tconsole.log(data)",
+      "\t\t},",
+      "\t},",
+      "\treducers: {",
+      "\t\tsave(state, { payload }) {",
+      "\t\t\treturn { ...state, ...payload }",
+      "\t\t}",
+      "\t},",
+      "}",
+    ],
+    "description": "dva 新建 model.js",
+  },
+  "dva-effects-action": {
+    "prefix": "Dva Effects Action",
+    "body": [
+      "* ${1:action_name}({ payload ={} }, { call }) {",
+      "\tconst { data } = yield call(Api.${2:action_name}, payload);",
+      "\tconsole.log(data)",
+      "},"
+    ],
+    "description": "dva 新建 action",
+  },
+  "form-props": {
+    "prefix": "Form Props",
+    "body": "form: { getFieldDecorator, validateFields, resetFields },",
+    "description": "Antd Form 表单配置",
+  },
+  "form-html": {
+    "prefix": "Form Html",
+    "body": [
+      "<FormItem label='$1' {...formLayout}>",
+      "\t{",
+      "\t\tgetFieldDecorator('${2:key}', {",
+      "\t\t\tinitialValue: '初始值'",
+      "\t\t})(",
+      "\t\t\t<Input placeholder='请输入' style={{ width: 240 }} />",
+      "\t\t)",
+      "\t}",
+      "</FormItem>"
+    ],
+    "description": "Antd Form 表单组件",
+  },
+  "function-common": {
+    "prefix": "Function Common Style",
+    "body": [
+      "function ${1:name} () {",
+      "$2",
+      "}",
+    ],
+    "description": "普通函数",
+  },
+  "function-arrow": {
+    "prefix": "Function Arrow Style",
+    "body": [
+      "const ${1:FuncName} = () => {",
+      "",
+      "};"
+    ],
+    "description": "箭头函数",
+  },
+  "async-function-common": {
+    "prefix": "Async Function Common  Style",
+    "body": [
+      "async function ${1:name} () {",
+      "$2",
+      "}",
+    ],
+    "description": "普通Async函数",
+  },
+  "async-function-arrow": {
+    "prefix": "Async Function Arrow Style",
+    "body": [
+      "const ${1:FuncName} = async () => {",
+      "",
+      "};"
+    ],
+    "description": "箭头Async函数",
+  },
+  "array-from": {
+    "prefix": "Array From Object Array",
+    "body": "const ${1:values} = Array.from(${2:array}, ({ ${3:key} }) => ${4:key});",
+    "description": "从二维数组中获取一维数组",
+  },
+  "array-map": {
+    "prefix": "Array Map Function",
+    "body": "${1:array}.map((item, index) => {$2})",
+    "description": "数组的map方法",
+  },
+  "array-forEach": {
+    "prefix": "Array ForEach Function",
+    "body": "${1:array}.forEach(item => {\n\tconst _item = item;\n})",
+    "description": "数组的forEach方法",
+  },
+  "request-get": {
+    "prefix": "Request GET Method",
+    "body": [
+      "// 注释",
+      "export async function ${1:funcName}() {",
+      "\treturn request(`${${2:Api}}`);",
+      "}",
+    ],
+    "description": "Get 方法请求",
+  },
+  "request-post": {
+    "prefix": "Request POST Method",
+    "body": [
+      "// 注释",
+      "export async function ${1:funcName}(params) {",
+      "\treturn request(`${${2:Api}}`, {",
+      "\t\tmethod: 'POST',",
+      "\t\tbody: {",
+      "\t\t\t...params",
+      "\t\t}",
+      "\t})",
+      "}",
+    ],
+    "description": "Post 方法请求",
+  },
+  "modal-props": {
+    "prefix": "Modal Props",
+    "body": [
+      "const ${1:actionModalProps} = {",
+      "\ttitle: '弹窗名称',",
+      "\tvisible: true,",
+      "\tclosable: false,\n\tkeyboard: false,\n\tmaskClosable: false,",
+      "\tonConfirm: async payload => {\n\t\tconsole.log(payload)\n\t},",
+      "\tonCancel() {",
+      "\t\tdispatch({",
+      "\t\t\ttype: '${2:StoreName}',",
+      "\t\t\tpayload: {\n\t\t\t\tvisible: false\n\t\t\t}",
+      "\t\t})",
+      "\t}",
+      "};",
+    ],
+    "description": "Modal的Props配置",
+  },
+  "table-props": {
+    "prefix": "Table Props",
+    "body": [
+      "const ${1:actionTableProps} = {",
+      "\tloading,",
+      "\tdata: dataArray,",
+      "\tonChange({ current, pageSize }) {\n\t\tconsole.log(current, pageSize)\n\t},",
+      "\tonAction: async record => {\n\t\tconsole.log(record)\n\t},",
+      "};",
+    ],
+    "description": "Table的Props配置",
+  }
+}
+```
