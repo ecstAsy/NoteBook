@@ -78,7 +78,7 @@
   "react-html-func-comp": {
     "prefix": "React Html Function Component",
     "body": [
-      "// 注释",
+      "// Todo",
       "const ${1:CompName} = (props) =>",
       "\t<div>${2:CompName}</div>"
     ],
@@ -128,6 +128,7 @@
       "\t\t}",
       "\t},",
       "\teffects: {",
+      "\t\t// Todo",
       "\t\t* list({ payload ={} }, { call }) {",
       "\t\t\tconst { data } = yield call(list, payload);",
       "\t\t\tconsole.log(data)",
@@ -227,7 +228,7 @@
   "request-get": {
     "prefix": "Request GET Method",
     "body": [
-      "// 注释",
+      "// Todo",
       "export async function ${1:funcName}() {",
       "\treturn request(`${${2:Api}}`);",
       "}",
@@ -237,7 +238,7 @@
   "request-post": {
     "prefix": "Request POST Method",
     "body": [
-      "// 注释",
+      "// Todo",
       "export async function ${1:funcName}(params) {",
       "\treturn request(`${${2:Api}}`, {",
       "\t\tmethod: 'POST',",
@@ -252,6 +253,7 @@
   "modal-props": {
     "prefix": "Modal Props",
     "body": [
+      "// Todo",
       "const ${1:actionModalProps} = {",
       "\ttitle: '弹窗名称',",
       "\tvisible: true,",
@@ -270,6 +272,7 @@
   "table-props": {
     "prefix": "Table Props",
     "body": [
+      "// Todo",
       "const ${1:actionTableProps} = {",
       "\tloading,",
       "\tdata: dataArray,",
@@ -278,6 +281,16 @@
       "};",
     ],
     "description": "Table的Props配置",
+  },
+  "useState": {
+    "prefix": "useState React Hooks",
+    "body": "const [${1:state}, set${2:state}] = useState(value);",
+    "description": "React Hooks useState"
+  },
+  "preventDefault": {
+    "prefix": "PreventDefault",
+    "body": "e.preventDefault();",
+    "description": "阻止事件冒泡"
   }
 }
 ```
