@@ -163,6 +163,7 @@
       "<FormItem label='$1' {...formLayout}>",
       "\t{",
       "\t\tgetFieldDecorator('${2:key}', {",
+      "\t\t\trules: [{ required: true, message: 'Label不能为空！' }],",
       "\t\t\tinitialValue: '初始值'",
       "\t\t})(",
       "\t\t\t<Input placeholder='请输入' style={{ width: 240 }} />",
