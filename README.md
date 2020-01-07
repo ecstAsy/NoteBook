@@ -55,3 +55,4 @@
 ## Vscode
 
 - <a href='/note/VsCode/config.md'>config（vscode常用配置）</a>
+- <a href='/note/VsCode/snippets.md'>snippets (vscode代码片段)</a>
