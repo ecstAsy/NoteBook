@@ -29,24 +29,24 @@
     "prefix": "React Class Component",
     "body": [
       "import React, { Component } from 'react';",
-      "",
+      "$2",
       "/**",
       "|--------------------------------------------------",
-      "| @CompName",
+      "| @${1:CompName}",
       "| #Component",
       "| 描述",
       "|--------------------------------------------------",
       "*/",
-      "",
+      "$2",
       "class ${1:CompName} extends Component {",
-      "",
+      "$2",
       "\trender() {",
       "\t\treturn (",
       "\t\t\t<div>page${1:CompName}</div>",
       "\t\t)",
       "\t}",
       "}",
-      "",
+      "$2",
       "export default ${1:Compname}"
     ],
     "description": "React Class 类组件",
@@ -67,11 +67,11 @@
       "const ${1:CompName} = ({ ...props }) => {",
       "",
       "\treturn (",
-      "\t\t<div className='page-${2:CompName}'>${3:CompName}</div>",
+      "\t\t<div>${1:CompName}</div>",
       "\t)",
       "}",
       "",
-      "export default ${4:CompName}"
+      "export default ${1:CompName}"
     ],
     "description": "React 函数式组件",
   },
@@ -80,7 +80,7 @@
     "body": [
       "// Todo",
       "const ${1:CompName} = (props) =>",
-      "\t<div>${2:CompName}</div>"
+      "\t<div>${1:CompName}</div>"
     ],
     "description": "React 函数式组件",
   },
@@ -88,8 +88,8 @@
     "prefix": "Dva Connect Store",
     "body": [
       "@connect(({ ${1:StoreName}, loading }) => ({",
-      "\t...${2:StoreName},",
-      "\tloading: loading.models.${3:StoreName},",
+      "\t...${1:StoreName},",
+      "\tloading: loading.models.${1:StoreName},",
       "}))",
       "$4"
     ],
@@ -121,7 +121,7 @@
       "\t\tsetup({ dispatch, history }) {",
       "\t\t\thistory.listen(async location => {",
       "\t\t\t\tconst { pathname } = location;",
-      "\t\t\t\tif (pathname === '/${2:modelName}') {",
+      "\t\t\t\tif (pathname === '/${1:modelName}') {",
       "\t\t\t\t\tconsole.log(pathname);",
       "\t\t\t\t}",
       "\t\t\t})",
@@ -187,7 +187,7 @@
     "prefix": "Function Arrow Style",
     "body": [
       "const ${1:FuncName} = () => {",
-      "",
+      "$2",
       "};"
     ],
     "description": "箭头函数",
@@ -212,7 +212,7 @@
   },
   "array-from": {
     "prefix": "Array From Object Array",
-    "body": "const ${1:values} = Array.from(${2:array}, ({ ${3:key} }) => ${4:key});",
+    "body": "const values = Array.from(${2:array}, ({ ${1:key} }) => ${1:key});",
     "description": "从二维数组中获取一维数组",
   },
   "array-map": {
@@ -254,15 +254,15 @@
     "prefix": "Modal Props",
     "body": [
       "// Todo",
-      "const ${1:actionModalProps} = {",
+      "const ${1:action}ModalProps = {",
       "\ttitle: '弹窗名称',",
-      "\tvisible: true,",
+      "\tvisible: ${1:action}ModalVisible,",
       "\tclosable: false,\n\tkeyboard: false,\n\tmaskClosable: false,",
       "\tonConfirm: async payload => {\n\t\tconsole.log(payload)\n\t},",
       "\tonCancel() {",
       "\t\tdispatch({",
       "\t\t\ttype: '${2:StoreName}',",
-      "\t\t\tpayload: {\n\t\t\t\tvisible: false\n\t\t\t}",
+      "\t\t\tpayload: {\n\t\t\t\t${1:action}ModalVisible: false\n\t\t\t}",
       "\t\t})",
       "\t}",
       "};",
@@ -273,7 +273,7 @@
     "prefix": "Table Props",
     "body": [
       "// Todo",
-      "const ${1:actionTableProps} = {",
+      "const ${1:action}TableProps = {",
       "\tloading,",
       "\tdata: dataArray,",
       "\tonChange({ current, pageSize }) {\n\t\tconsole.log(current, pageSize)\n\t},",
@@ -284,7 +284,7 @@
   },
   "useState": {
     "prefix": "useState React Hooks",
-    "body": "const [${1:state}, set${2:state}] = useState(value);",
+    "body": "const [${1:state}, set${1:state}] = useState(value);",
     "description": "React Hooks useState"
   },
   "preventDefault": {
