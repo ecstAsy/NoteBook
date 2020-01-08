@@ -3,17 +3,17 @@
 ### 配置流程
 
 ***汉化版本：（zh-cn）***
-[-] 文件
-[-] 首选项
-[-] 用户代码片段
-[-] javascript.json
+- 文件
+- 首选项
+- 用户代码片段
+- javascript.json
 
 
 ***English：（en-us）***
-[-] File
-[-] Preferences
-[-] User Snippets
-[-] javascript.json
+- File
+- Preferences
+- User Snippets
+- javascript.json
 
 ```
 {
