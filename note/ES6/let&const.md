@@ -1,6 +1,6 @@
 <h2 align="center">let&const详解</h2>
 
-#### let
+### let
 
 - let 声明变量，没有变量提升
 - let 是一个块级作用域
@@ -31,7 +31,7 @@ let a = 10;
 console.log(a);  // Uncaught SyntaxError: Identifier 'a' has already been declared.
 ```
 
-#### const
+### const
 
 - const 声明变量，没有变量提升
 - const 是一个块级作用域
@@ -100,4 +100,4 @@ console.log(RegExp);        // 10
 console.log(window.RegExp); // ƒ RegExp() { [native code] }
 ```
 
-### ***提示： 在默认情况下使用const，如果你知道这个变量要被修改的情况下使用let.***
+##### ***提示： 在默认情况下使用const，如果你知道这个变量要被修改的情况下使用let.***
