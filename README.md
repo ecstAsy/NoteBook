@@ -15,6 +15,8 @@
 - <a href='/note/JavaScript/JS-递归取值.md'>递归取值</a>
 - <a href='/note/JavaScript/JS-study.md'>冷知识点积累</a>
 
+## ES6
+- <a href='/note/ES6/let&const.md'>let & const</a>
 
 ## React
 
