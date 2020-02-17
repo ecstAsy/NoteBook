@@ -71,6 +71,43 @@ let Arry = [...new Set(Arrys)];
 console.log(Arry);        // [ 1, 2, 4, 3, '1', '3', 6 ]
 ```
 
+***数组去重方法自实现***
+
+```
+// duplicate removal
+function duplicateRemoval(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] === array[j]) {
+        array.splice(j, 1);
+        j--; // 删除一个元素后，后面的元素会依次往前，下标也会依次往前。
+      }
+    }
+  }
+  return array
+}
+
+const Arry = duplicateRemoval([1, 2, 3, 4, 5, 6, 7, 1, 2, 2, 3, 3, 4, 4]);
+
+console.log('====================================');
+console.log(Arry);    // [1, 2, 3, 4, 5, 6, 7]
+console.log('====================================');
+```
+
+***冒泡算法排序***
+
+```
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length - i; j++) {
+    if (arr[j] > arr[j + 1]) {
+      let temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+}
+```
+
 ### String
 
 ***split():*** 字符串转数组
