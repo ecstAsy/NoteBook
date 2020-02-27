@@ -62,11 +62,12 @@ HTTP/1.1 协议中预留给能够将连接改为管道方式的代理服务器�
 ```
 
 ***状态码列表***
-<img src='../../Image/HttpCode.png' alt='状态码列表'/> 
+
+![状态码列表](../../Image/HttpCode.png)
 
 ## TCP 的三次握手 （链接）
 
-<img src='../../Image/TCP3.png' alt='TCP 的三次握手导图'/> 
+![TCP 的三次握手导图](../../Image/TCP3.png)
 
 **第一次握手：**
 建立连接时，客户端发送syn包（syn=j）到服务器，并进入SYN_SENT状态，等待服务器确认；SYN：同步序列编号
@@ -136,7 +137,7 @@ TCP 数据传输就是两个人隔空交流，有一定的距离，需要对方�
 
 ## TCP 的四次挥手 （关闭）
 
-<img src='../../Image/TCP4.png' alt='TCP 四三次挥手导图'/> 
+![TCP 四三次挥手导图](../../Image/TCP4.png)
 
 
 **第一次挥手：**
