@@ -2,7 +2,6 @@
 
 ## JavaScript
 
-- [this的指向](/note/JavaScript/JS-this.md)
 - <a href='/note/JavaScript/JS-this.md'>this的指向</a>
 - <a href='/note/JavaScript/JS-hasOwnProperty.md'>hasOwnProperty</a>
 - <a href='/note/JavaScript/JS-closure.md'>closure（闭包）</a>
