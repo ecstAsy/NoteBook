@@ -2,8 +2,8 @@
 
 |-|声明变量，没有变量提升|块级作用域|不能重复声明|声名常量，一旦赋值就不能被修改|
 |-|-|-|-|-|
-|let|√|√|√||
-|const|√|√||√|
+|centered let|centered √|centered √|centered √||
+|centered const|centered √|centered √||centered √|
 
 
 ### let
