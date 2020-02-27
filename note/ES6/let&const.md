@@ -1,9 +1,9 @@
 <h2 align="center">let&const详解</h2>
 
 |-|声明变量，没有变量提升|块级作用域|不能重复声明|声名常量，一旦赋值就不能被修改|
-|-|-|-|-|-|
-|centered let|centered √|centered √|centered √||
-|centered const|centered √|centered √||centered √|
+|:-:|:-:|:-:|:-:|:-:|
+|let|√|√|√||
+|const|√|√||√|
 
 
 ### let
