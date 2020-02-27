@@ -6,9 +6,9 @@
 yarn add mocker-api mockjs --dev
 ```
 比如我们想用Mock模拟用户信息以及小说列表，
-我们在项目根目录新建 mock 文件夹，新建 index.js  book.js
+我们在项目根目录新建 _mock_ 文件夹，新建 _index.js_  _book.js_
 
-index.js
+__index.js__
 ```
 const delay = require('mocker-api/utils/delay'); // 延时 模拟请求异步问题
 const mockjs = require('mockjs');
@@ -82,7 +82,7 @@ const data = {
     })
   }
 }
-//使用delay方法可以延迟返回数据
+// 使用delay方法可以延迟返回数据
 module.exports = delay(data, 1000)
 ```
 
@@ -224,11 +224,11 @@ npm run mock
 ```
 
 这说明你的mock本地服务已经开启，你可以在浏览器进行测试：
-http://localhost:3721/api/user 
+_http://localhost:3721/api/user_
 ```
 {"id":1,"username":"kenny","sex":6}
 ```
-http://localhost:3721/api/book/list
+_http://localhost:3721/api/book/list_
 ```
 lists: [{id: 92, title: "百年孤独", isbn: 9862023825827, publisher: "上海人民出版社", pubdate: "1998-08-26",…},…]
 0: {id: 92, title: "百年孤独", isbn: 9862023825827, publisher: "上海人民出版社", pubdate: "1998-08-26",…}
@@ -245,9 +245,9 @@ lists: [{id: 92, title: "百年孤独", isbn: 9862023825827, publisher: "上海�
 
 接下来我们就可以愉快的进行自己项目开发了。
 
-我用 Mock 和 Taro 一起开发的，代码已经上传 <a href='https://github.com/ecstAsy/Taro-Mock'>git代码仓库</a>.
+我用 Mock 和 Taro 一起开发的，代码已经上传[git代码仓库](https://github.com/ecstAsy/Taro-Mock).
 
-关于更多信息请自行参考 <a href='https://nervjs.github.io/taro/docs/README.html'>Taro开发文档</a> 和 <a href='https://github.com/nuysoft/Mock/wiki/Getting-Started'>Mock 开发文档</a> 自行研究。
+关于更多信息请自行参考 [Taro开发文档](https://nervjs.github.io/taro/docs/README.html) 和 [Mock 开发文档](https://github.com/nuysoft/Mock/wiki/Getting-Started) 自行研究。
 
 
  
