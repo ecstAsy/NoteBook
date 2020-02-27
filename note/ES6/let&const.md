@@ -101,3 +101,4 @@ console.log(window.RegExp); // ƒ RegExp() { [native code] }
 ```
 
 ##### ***提示： 在默认情况下使用const，如果你知道这个变量要被修改的情况下使用let.***
+[提示]https://github.com/ecstAsy/NoteBook/edit/master/note/ES6/let&const.md
