@@ -2,59 +2,60 @@
 
 ## JavaScript
 
-- <a href='/note/JavaScript/JS-this.md'>this的指向</a>
-- <a href='/note/JavaScript/JS-hasOwnProperty.md'>hasOwnProperty</a>
-- <a href='/note/JavaScript/JS-closure.md'>closure（闭包）</a>
-- <a href='/note/JavaScript/JS-IIFE.md'>IIFE（立即执行函数）</a>
-- <a href='/note/JavaScript/JS-HTTP&TCP.md'>HTTP&TCP</a>
-- <a href='/note/JavaScript/JS-Object.md'>Object（对象方法）</a>
-- <a href='/note/JavaScript/JS-RegExp.md'>RegExp（常用正则表达式）</a>
-- <a href='/note/JavaScript/JS-throttle&debounce.md'>Throttle&Debounce（函数节流和防抖）</a>
-- <a href='/note/JavaScript/JS-ArrayToObject.md'>数组转对象</a>
-- <a href='/note/JavaScript/JS-a++&++a.md'>a++&++a解析</a>
-- <a href='/note/JavaScript/JS-递归取值.md'>递归取值</a>
-- <a href='/note/JavaScript/JS-study.md'>冷知识点积累</a>
+- [this的指向](/note/JavaScript/JS-this.md)
+- [hasOwnProperty](/note/JavaScript/JS-hasOwnProperty.md)
+- [closure（闭包）](/note/JavaScript/JS-closure.md)
+- [IIFE（立即执行函数）](/note/JavaScript/JS-IIFE.md)
+- [HTTP&TCP](/note/JavaScript/JS-HTTP&TCP.md)
+- [Object（对象方法）](/note/JavaScript/JS-Object.md)
+- [RegExp（常用正则表达式）](/note/JavaScript/JS-RegExp.md)
+- [Throttle&Debounce（函数节流和防抖）](/note/JavaScript/JS-throttle&debounce.md)
+- [数组转对象](/note/JavaScript/JS-ArrayToObject.md)
+- [a++&++a解析](/note/JavaScript/JS-a++&++a.md)
+- [递归取值](/note/JavaScript/JS-递归取值.md)
+- [冷知识点积累](/note/JavaScript/JS-study.md)
 
 ## ES6
-- <a href='/note/ES6/let&const.md'>let & const</a>
+
+- [let & const](/note/ES6/let&const.md)
 
 ## React
 
-- <a href='/note/React/context.md'>Context使用</a>
-- <a href='/note/React/input-ref-focus.md'>Ref使用</a>
-- <a href='/note/React/Switch.md'>Switch使用</a>
+- [Context使用](/note/React/context.md)
+- [Ref使用](/note/React/input-ref-focus.md)
+- [Switch使用](/note/React/Switch.md)
 
 ## Plugin
 
-- <a href='/note/Plugin/Web-Excel.md'>前端对Excel的处理</a>
+- [前端对Excel的处理](/note/Plugin/Web-Excel.md)
 
 ## Taro
 
-- <a href='/note/Taro/Taro&Mock.md'>Taro&Mock配置</a>
+- [Taro&Mock配置](/note/Taro/Taro&Mock.md)
 
 
 ## Weapp
 
-- <a href='/note/Weapp/FormId-collect.md'>FormId（FormId收集）</a>
-- <a href='/note/Weapp/Scroll-Touch.md'>ScrollTouch（向左/右滑动删除）</a>
-- <a href='/note/Weapp/ScrollView-scrollbar.md'>ScrollView-Scrollbar（隐藏滚动条）</a>
+- [FormId（FormId收集）](/note/Weapp/FormId-collect.md)
+- [ScrollTouch（向左/右滑动删除）](/note/Weapp/Scroll-Touch.md)
+- [ScrollView-Scrollbar（隐藏滚动条）](/note/Weapp/ScrollView-scrollbar.md)
 
 
 ## Git
 
-- <a href='/note/Git/git命令.md'>Git常用命令</a>
-- <a href='/note/Git/git报错.md'>Git常见报错</a>
+- [Git常用命令](/note/Git/git命令.md)
+- [Git常见报错](/note/Git/git报错.md)
 
 
 ## Tools
 
-- <a href='/note/Tools/IDCard.md'>IDCard（根据身份证获取基本信息）</a>
-- <a href='/note/Tools/TimeSwatch.md'>Time（转换对象moment时间格式）</a>
-- <a href='/note/Tools/MoneyLowercaseToUppercase.md'>Money (小写转大写)</a>
-- <a href='/note/Tools/Decimal.md'>Number (默认两位小数)</a>
+- [IDCard（根据身份证获取基本信息）](/note/Tools/IDCard.md)
+- [Time（转换对象moment时间格式）](/note/Tools/TimeSwatch.md)
+- [Money （小写转大写）](/note/Tools/MoneyLowercaseToUppercase.md)
+- [Number （默认两位小数）](/note/Tools/Decimal.md)
 
 
 ## Vscode
 
-- <a href='/note/VsCode/config.md'>config（vscode常用配置）</a>
-- <a href='/note/VsCode/snippets.md'>snippets (vscode代码片段)</a>
+- [config（vscode常用配置）](/note/VsCode/config.md)
+- [snippets （vscode代码片段）](/note/VsCode/snippets.md)
