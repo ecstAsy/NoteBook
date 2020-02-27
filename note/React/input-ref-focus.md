@@ -1,9 +1,11 @@
 <h2 align="center">refs 自动获取 input 框焦点记录</h2>
 
 ### 效果图
-<img src='../../Image/inputFoucs.png' alt=''/> 
+
+![自动获取 input 框焦点](../../Image/inputFoucs.png)
 
 ### 实现代码
+
 ```
 componentDidMount = () => {
   // 用 ref 自动获取输入框焦点
