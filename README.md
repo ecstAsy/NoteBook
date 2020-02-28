@@ -32,6 +32,7 @@
 ## Taro
 
 - [Taro&Mock配置](/note/Taro/Taro&Mock.md)
+- [Taro@Dva配置](/note/Taro/Taro&Dva&Config.md)
 
 
 ## Weapp
