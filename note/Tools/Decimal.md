@@ -1,6 +1,10 @@
 <h2 align="center">数字默认两位小数</h2>
 
 ## 代码
+||Decimal|ThousandNum|
+|:-:|:-:|:-:|
+|200|||
+|34567|||
 
 - 1     => 1.00
 - 1.1   => 1.10
@@ -28,3 +32,6 @@ function Decimal(x) {
 ```
 
 
+const ThousandNum = num => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+const money = ThousandNum(20190214.34);
+console.log(money);
