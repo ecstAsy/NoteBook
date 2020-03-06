@@ -36,7 +36,7 @@ const id = RandomId(10);
 console.log(id);     // id => "jg7zpgiqva"
 ```
 
-##### 生成随机HEX色值
+###### 生成随机HEX色值
 
 ```js
 const RandomColor = () =>"#" + Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0");
@@ -46,7 +46,7 @@ const color = RandomColor();
 console.log(color);     // color => "#f03665"
 ```
 
-##### 生成星级评分
+###### 生成星级评分
 
 ```js
 const StarScore = rate =>"★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate);
@@ -56,7 +56,7 @@ const star = StarScore(3);
 console.log(start);    // start => "★★★"
 ```
 
-##### 操作URL查询参数
+###### 操作URL查询参数
 
 ```js
 // location.search = "?name=young&sex=male"

@@ -2,7 +2,7 @@
 
 #### 「 Function Skill 」
 
-##### 函数自执行
+###### 函数自执行
 
 ```js
 const Func = function() {}(); // 常用
@@ -42,7 +42,7 @@ delete function() {}();
 
 ```
 
-##### 隐式返回值
+###### 隐式返回值
 
 > *只能用于单语句返回值箭头函数，如果返回值是对象必须使用()包住*
 
@@ -55,7 +55,7 @@ const Func = function (name) {
 const Func = name => "I Love " + name;
 ```
 
-##### 一次性函数
+###### 一次性函数
 
 > *适用于运行一些只需执行一次的初始化代码*
 
@@ -68,7 +68,7 @@ function Func() {
 }
 ```
 
-##### 惰性载入函数
+###### 惰性载入函数
 
 > *函数内判断分支较多较复杂时可大大节约资源开销*
 
@@ -95,7 +95,7 @@ function Func() {
 }
 ```
 
-##### 检测非空参数
+###### 检测非空参数
 
 ```js
 function IsRequired() {
@@ -111,7 +111,7 @@ Func();                        // "param is required"
 Func("You");                   // "I Love You"
 ```
 
-##### 字符串创建函数
+###### 字符串创建函数
 
 ```js
 const Func = new Function("name", "console.log(\"I Love \" + name)");
@@ -119,7 +119,7 @@ const Func = new Function("name", "console.log(\"I Love \" + name)");
 console.log(Func);               // anonymous(name) { console.log("I Love " + name) }
 ```
 
-##### 优雅处理错误信息
+###### 优雅处理错误信息
 
 ```js
 try {
@@ -129,7 +129,7 @@ try {
 }
 ```
 
-##### 优雅处理Async/Await参数
+###### 优雅处理Async/Await参数
 
 ```js
 function AsyncTo(promise) {
@@ -139,7 +139,7 @@ function AsyncTo(promise) {
 const [err, res] = await AsyncTo(Func());
 ```
 
-##### 优雅处理多个函数返回值
+###### 优雅处理多个函数返回值
 
 ```js
 function Func() {

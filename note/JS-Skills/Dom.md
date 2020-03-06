@@ -2,7 +2,7 @@
 
 #### 「 Dom Skill 」
 
-##### 显示全部DOM边框
+###### 显示全部DOM边框
 
 > *调试页面元素边界时使用*
 
@@ -12,7 +12,7 @@
 });
 ```
 
-##### 自适应页面
+###### 自适应页面
 
 > *页面基于一张设计图但需做多款机型自适应，元素尺寸使用rem进行设置*
 
@@ -25,7 +25,7 @@ function AutoResponse(width = 750) {
 }
 ```
 
-##### 过滤XSS
+###### 过滤XSS
 
 ```js
 function FilterXss(content) {
@@ -37,7 +37,7 @@ function FilterXss(content) {
 }
 ```
 
-##### 存取LocalStorage
+###### 存取LocalStorage
 
 > *反序列化取，序列化存*
 
