@@ -15,6 +15,15 @@
 - [递归取值](/note/JavaScript/JS-递归取值.md)
 - [冷知识点积累](/note/JavaScript/JS-study.md)
 
+## JS开发技巧篇
+- [① String(字符串)篇](/note/JS-Skills/String.md)
+- [② Number(数值)篇](/note/JS-Skills/Number.md)
+- [③ Boolean(布尔)篇](/note/JS-Skills/Boolean.md)
+- [④ Array(数组)篇](/note/JS-Skills/Array.md)
+- [⑤ Object(对象)篇](/note/JS-Skills/Object.md)
+- [⑥ Function(函数)篇](/note/JS-Skills/Function.md)
+- [⑦ Dom(DOM)篇](/note/JS-Skills/Dom.md)
+
 ## ES6
 
 - [let & const](/note/ES6/let&const.md)
