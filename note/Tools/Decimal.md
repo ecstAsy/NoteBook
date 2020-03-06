@@ -1,15 +1,18 @@
-<h2 align="center">数字默认两位小数</h2>
+<h2 align="center">普通数字格式转金钱计数格式</h2>
 
-## 代码
+## 展示效果
+
 ||Decimal|ThousandNum|
 |:-:|:-:|:-:|
-|200|||
-|34567|||
+|1|1.00|1.00|
+|1.1|1.10|1.10|
+|1.11|1.11|1.11|
+|34567.876|34567.88|34,567.88|
+|20190214|20190214.00|20,190,214.00|
 
-- 1     => 1.00
-- 1.1   => 1.10
-- 1.11  => 1.11
+## 代码
 
+__补齐两位小数__
 ```
 function Decimal(x) {
   let f = parseFloat(x);
@@ -31,7 +34,11 @@ function Decimal(x) {
 }
 ```
 
+__转成金钱计数格式__
 
+```
 const ThousandNum = num => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 const money = ThousandNum(20190214.34);
-console.log(money);
+console.log(money);   // 20,190,214
+```
+

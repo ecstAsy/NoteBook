@@ -54,7 +54,7 @@
 - [IDCard（根据身份证获取基本信息）](/note/Tools/IDCard.md)
 - [Time（转换对象moment时间格式）](/note/Tools/TimeSwatch.md)
 - [Money （小写转大写）](/note/Tools/MoneyLowercaseToUppercase.md)
-- [Number （默认两位小数）](/note/Tools/Decimal.md)
+- [Number （默认两位小数，转化金钱计数格式）](/note/Tools/Decimal.md)
 
 
 ## Vscode
