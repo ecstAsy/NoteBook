@@ -18,8 +18,7 @@ Object.keys() 会返回一个所有元素都是字符串的数组，该数组的
 遍历的顺序一致。
 
 
-```
-
+```js
 const NUMS = [1, 2, 3];
 console.log(Object.keys(NUMS))              // ['0', '1', '2']
 
@@ -55,7 +54,7 @@ Object.values() 返回一个数组，其元素是给定对象可枚举属性的�
 遍历的顺序一致。
 
 
-```
+```js
 const Person = {
   name: 'Mary',
   job: 'IT',
@@ -90,7 +89,7 @@ console.log(Object.values('foo'));        // ['f', 'o', 'o']
 
 Object.assign() 方法用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
 
-```
+```js
 const obj1 = { a: 1, b: 2, c: 4 };
 
 const obj2 = { a: 2, b: 4, c: 4, d: 6 };

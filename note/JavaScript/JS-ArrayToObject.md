@@ -2,7 +2,7 @@
 
 ## 快速将数组转换成对象
 
-```
+```js
 const Arry = [
   { name: 1, is: 0 },
   { name: 2, is: 1 },
@@ -29,7 +29,7 @@ console.log(todo(Arry))
 
 Array.from() 方法从一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。
 
-```
+```js
 const cities = [
   { name: 'Paris', visited: 'no' },
   { name: 'Paris', visited: 'no' },
@@ -55,7 +55,7 @@ console.log(cityNames);
 
 数组去重。
 
-```
+```js
 const cityNames = [ 'Paris', 'Paris', 'Marseille', 'Rome', 'Milan', 'Palermo', 'Genoa', 'Berlin', 'Hamburg', 'New York' ];
 
 cityNames = [...new Set(cityNames)];

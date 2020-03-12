@@ -6,7 +6,7 @@
 
 ### 实现代码
 
-```
+```js
 componentDidMount = () => {
   // 用 ref 自动获取输入框焦点
   const { input } = this.refInput;

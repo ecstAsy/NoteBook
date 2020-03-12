@@ -2,7 +2,7 @@
 
 ## 通用命令
 
-```
+```js
 // git 初始化
 git init
 
@@ -22,7 +22,7 @@ git push -u origin master
 
 ## git 分支
 
-```
+```js
 // 查看本地分支
 git branch
 
@@ -60,7 +60,7 @@ git merge branch_name
 
 ***如果执行完commit后，想撤回commit，怎么办？***
 
-```
+```js
 // 撤销了你的commit操作，仍然保留您写的代码
 git reset --soft HEAD^
 ```
@@ -84,8 +84,7 @@ git commit --amend
 ```
 
 ## 版本回退
-
-```
+```js
 // 版本回退到某一次commit
 git reset --hard <b3f881faae371ecf59363143b4216daedc0290ba>
 
@@ -99,7 +98,7 @@ git pull origin master --allow-unrelated-histories
 
 ***注：***
 
-```
+```js
 // git 报错 1
 There is no tracking information for the current branch.
 Please specify which branch you want to merge with.

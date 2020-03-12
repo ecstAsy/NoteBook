@@ -13,7 +13,7 @@ Context 提供了一个无需为每层组件手动添加 props，就能在组件
 ## 简单例子
 
 ***App.js***
-```
+```js
 import React from 'react';
 import Screen from './Screen';
 
@@ -53,7 +53,7 @@ class App extends React.Component {
 export default App
 ```
 ***Screen.js***
-```
+```js
 import React from 'react';
 import { Button } from 'antd';
 import { MyContext } from './App';
@@ -71,7 +71,7 @@ const Toggle = () => {
 export default Toggle
 ```
 ***Toggle.js***
-```
+```js
 import React from 'react';
 import { Button } from 'antd';
 import { MyContext } from './App';
@@ -92,7 +92,7 @@ export default Toggle
 ## 消费多个 Context
 
 ***App.js***
-```
+```js
 import React from 'react';
 import Screen from './Screen';
 
@@ -135,7 +135,7 @@ class App extends React.Component {
 export default App
 ```
 ***Screen.js***
-```
+```js
 import React from 'react';
 import { Button } from 'antd';
 import { MyContext } from './App';
@@ -153,7 +153,7 @@ const Toggle = () => {
 export default Toggle
 ```
 ***Toggle.js***
-```
+```js
 import React from 'react';
 import { Button } from 'antd';
 import { MyContext, MyTheme } from './App';
@@ -178,4 +178,4 @@ export default Toggle
 ```
 如果多个 Context 有共享的数据，最好能合并到一起。
 
-更多关于 Context 的介绍，请点击<a href="https://react.docschina.org/docs/context.html">React-Context 中文文档</a>查看.
+更多关于 Context 的介绍，请点击[React-Context 中文文档](https://react.docschina.org/docs/context.html)查看.

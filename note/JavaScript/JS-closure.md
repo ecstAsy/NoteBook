@@ -6,7 +6,7 @@
 
 ## 简单使用
 
-```
+```js
 function _getName() {
   var _initName = 'Mary';
   function Todo() {
@@ -23,7 +23,7 @@ getName();                    //  Mary  (注：函数内部的子函数能读取
 闭包是由函数以及创建该函数的词法环境组合而成。
 这个环境包含了这个闭包创建时所能访问的所有局部变量。
 
-```
+```js
 function Cunter(x) {
   function add(y) {
     return x + y
@@ -48,7 +48,7 @@ console.log(Counter9(9));       // 18
 下面的示例展现了如何使用闭包来定义公共函数，并令其可以访问私有函数和变量。
 这个方式也称为 模块模式（module pattern）：
 
-```
+```js
 var makeCounter = function() {
   var privateCounter = 0;
   function changeBy(val) {

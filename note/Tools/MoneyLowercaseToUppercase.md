@@ -7,7 +7,7 @@
 - 10.01  => 壹拾元壹分
 - 100.01 => 壹佰元壹分
 
-```
+```js
 moneyToCapital(Money) {
   let money = Money;
   // eslint-disable-next-line no-array-constructor

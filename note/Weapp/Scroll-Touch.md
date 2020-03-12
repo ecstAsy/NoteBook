@@ -9,7 +9,7 @@ Taro开发文档
 
 ## 代码
 
-```
+```js
 index.js：
 
 import Taro, { Component } from '@tarojs/taro';
@@ -106,7 +106,7 @@ export default class ScrollTouch extends Component {
 }
 ```
 
-```
+```scss
 index.scss:
 
 .scroll-touch {

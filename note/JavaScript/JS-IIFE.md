@@ -41,7 +41,7 @@ function () {
 ## IIFE 的优点
 
 ***通过定义一个匿名函数，生成一个独立私有的函数作用域空间，该空间内的方法和变量，不会污染全局环境，同时也不会被外界使用到***
-```
+```js
 (function () {
   var name = 'Mary';
 })();
@@ -49,7 +49,7 @@ function () {
 console.log(name)  // '' 此时在外部是读取不到内部的变量的
 ```
 ***不用再次调用函数，可以直接执行***
-```
+```js
 var result = (function () { 
     var name = "Barry"; 
     return name; 

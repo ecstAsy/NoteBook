@@ -4,11 +4,11 @@
 
 使用 **Switch** 组件时候，如果和 _Form_ 配合使用，要设置 
 
->valuePropName: 'checked'
+> valuePropName: 'checked'
 
  才能更好的显示。
 
-```
+```js
 import React from 'react';
 import { Form, Switch } from 'antd';
 

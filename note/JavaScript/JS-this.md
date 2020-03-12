@@ -11,7 +11,7 @@
 
 ## 全局环境
   在全局环境下，this 始终指向全局对象（window）, 无论是否严格模式；
-  ```
+  ```js
   console.log(this.document === document); // true
   
   // 在浏览器中，全局对象为 window 对象：
@@ -27,14 +27,14 @@
 普通函数内部this分两种情况  严格模式和非严格模式
 
 非严格模式下 this指向 window 对象
-```
+```js
 function f1() {
   return this
 }
 console.log(f1 === window); // true
 ```
 严格模式下 this为 undefind
-```
+```js
  function f2() {
    'use strict' // 严格模式
    return this
@@ -49,7 +49,7 @@ console.log(f1 === window); // true
 1. 定义函数的位置和this没有关系，只和调用函数的对象有关。
 2. 多层嵌套的对象，内部函数调用的this指向调用函数最近的对象（window也是对象，其内部对象调用方法的this指向内部对象，非window对象）。
 
-```
+```js
 var Obj = {
   name: 'Mary',
   age: 20,
@@ -84,7 +84,7 @@ console.log(Obj.prop.getAge()); // 30 this 指向 Obj.prop(最近的) 非 Obj
 
 原型链中方法的this同样指向调用它的对象
 
-```
+```js
 var Obj = {
   Todo: function() {
     return this.a + this.b
@@ -114,7 +114,7 @@ console.log(P.Todo()); // 5 this 指向 P 调用方法的对象（最近的）
 注：当构造器返回的默认值是 this 引用的一个对象时，可手动设置返回其他对象。
    如果返回值不是一个对象，则返回 this。
 
-```
+```js
 function C1() {
   this.name = 'Mary';
 }
@@ -137,7 +137,7 @@ console.log(P2.name); // Tom 返回值是一个对象  可手动更改  this.nam
 当函数通过 Function 原型中继承的 call() & apply() 方法时，其函数内部的 this 可绑定到 call() & apply() 方法指定的第一个对象上，
 如果第一个参数不是 Object，JavaScript内部会尝试将其转换成 Object 然后指向它。
 
-```
+```js
 function Add(c, d) {
   console.log(this);
   return this.a + this.b + c + d
@@ -163,7 +163,7 @@ Cost.apply([7]);  // [7]
 
 通过 bind 方法绑定后，函数被永远绑定在第一个参数对象上，被一直调用。
 
-```
+```js
 function todo() {
   return this.name
 }
@@ -184,7 +184,7 @@ console.log(Bar.getName()); // Tom 同 Object 中的 this
 
 延时函数内部 this 指向 window 对象，可以使用 bind 改变其 this 指向。
 
-```
+```js
 function Person1() {
   this.age = '20';
   setTimeout(function() {
@@ -215,7 +215,7 @@ var P2 = new Person2(20);  // 1s 后输出 P2 （新生成的 Person2 对象）
 
 因为箭头函数可以捕获其所在上下文的this值，所以
  
-```
+```js
 function Person1() {
   this.age = 10;
   setTimeout(() => {
@@ -238,7 +238,7 @@ var P2 = new Person1(); // 1s 后输出 window 对象
 
 ** Object 中的箭头函数 **
 
-```
+```js
 var People = {
   firstName: 'Mary',
   getName: function(lastName) {
@@ -259,7 +259,7 @@ console.log(People.getFullName('Mr'));    // Mary Mr this 仍然指向 People，
 
 **严格模式和非严格模式对比**
 
-```
+```js
 var f1 = () => {
   'use strict'; 
   return this
@@ -276,7 +276,7 @@ console.log(f1() === f2());  // true  因为都是 window 对象
 
 ### 箭头函数作为方法调用
 
-```
+```js
 var obj = {
   i: 10,
   b: () => {
@@ -296,7 +296,7 @@ fun();   // undefind  window 对象   （注：调用最近的对象 fun 非 obj
 
 ## DOM 中的 this
 
-```
+```js
 case1：
 
 <button onclick="console.log('1:', this)">1</button>

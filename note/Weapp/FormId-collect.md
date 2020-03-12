@@ -21,7 +21,7 @@ formId 的期限只有 一周
 
 ## 一次收集一个
 
-```
+```js
 wxml:
 <form report-submit='true' bindsubmit="handleCollect">
   <Button form-type='submit' />
@@ -38,7 +38,7 @@ handleCollect = e => {
 
 ## 一次收集多个
 
-```
+```js
 wxml:
 <block>
   <label for='9'>
@@ -84,7 +84,7 @@ handleCollect = e => {
 
 ## Taro 自定义组件收集 FormId
 
-```
+```js
 export default class FormIdCollect extends Component {
 
   formIds = [];

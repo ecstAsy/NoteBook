@@ -14,7 +14,7 @@ return 出去。
 
 ***代码实现***
 
-```
+```js
 // 节流方法
 function throttle(fn, interval = 300) {
   let canDo = true;
@@ -40,7 +40,7 @@ function throttle(fn, interval = 300) {
 
 ***代码实现***
 
-```
+```js
 // 防抖方法
 function debounce(fn, interval = 300) {
   let timeout = null;

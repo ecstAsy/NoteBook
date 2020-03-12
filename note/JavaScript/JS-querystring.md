@@ -14,7 +14,7 @@
 
 ***在使用querystring之前一定要先引入该模块。***
 
-```
+```js
 // ***方法1
 import querystring from 'querystring';          // ES6
 const querystring = require("querystring");     // ES5

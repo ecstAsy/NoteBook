@@ -6,7 +6,7 @@
 
 - 安装依赖
 
-```
+```js
 npm install js-export-excel
 
 yarn add js-export-excel
@@ -14,7 +14,7 @@ yarn add js-export-excel
 
 - 在使用页面引入依赖
 
-```
+```js
 const ExportJsonExcel = require('js-export-excel');
 
 import ExportJsonExcel from 'js-export-excel';
@@ -22,7 +22,7 @@ import ExportJsonExcel from 'js-export-excel';
 
 - 调用
 
-```
+```js
  /**
     |--------------------------------------------------
     | @dataSource 
@@ -76,7 +76,7 @@ downloadExcel({ dataSource, TableObject });
 
 - 安装依赖
 
-```
+```js
 npm install xlsx
 
 yarn add xlsx
@@ -90,7 +90,7 @@ import * as XLSX from 'xlsx';
 
 - 调用
 
-```
+```js
 // js
 const onImportExcel = files => {
 

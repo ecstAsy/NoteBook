@@ -9,7 +9,7 @@
 
 ## Promise 构造函数是同步执行还是异步执行，then 方法是同步执行还是异步执行？
 
-```
+```js
 const promise = new Promise((resolve, reject) => {
   console.log(1);
   resolve();
@@ -36,7 +36,7 @@ localStorage 和 sessionStorage 属性允许在浏览器中存储 key/value 对�
 
 ***sessionStorage：*** 只将数据保存在当前会话中，改数据对象临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。
 
-```
+```js
 // localStorage 用法
 // 存储
 localStorage.setItem('userId', 1);

@@ -4,7 +4,7 @@
 
 ***toString():*** 数组转字符串
 
-```
+```js
 const Citys = ['北京', '上海', '广州', '深圳'];
 
 const CityStr = Citys.toString();
@@ -14,7 +14,7 @@ console.log(CityStr);       // 北京,上海,广州,深圳
 
 ***Array.form():*** 获取数组元素中的某个字段的集合
 
-```
+```js
 const Citys = [
   { id: 1, name: '北京' },
   { id: 2, name: '上海' },
@@ -29,7 +29,7 @@ console.log(CityNames);    // [ '北京', '上海', '广州', '深圳' ]
 
 ***sort():*** 数组排序
 
-```
+```js
 // 单维数组
 const Arrys = [1, 5, 6, 3, 7, 8];
 
@@ -55,7 +55,7 @@ console.log(newStudents);
 
 使用new Set()方法进行数组去重的时候，一定要保证数组元素的类型是一致的，因为在内部判断的时候用的是 '===' 而不是 '=='。
 
-```
+```js
 // 数组元素类型一致
 const Arry = [1, 2, 4, 3, 1, 2, 3, 4, 6];
 
@@ -73,7 +73,7 @@ console.log(Arry);        // [ 1, 2, 4, 3, '1', '3', 6 ]
 
 ***数组去重方法自实现***
 
-```
+```js
 // duplicate removal
 function duplicateRemoval(array) {
   for (let i = 0; i < array.length; i++) {
@@ -96,7 +96,7 @@ console.log('====================================');
 
 ***冒泡算法排序***
 
-```
+```js
 for (let i = 0; i < arr.length; i++) {
   for (let j = 0; j < arr.length - i; j++) {
     if (arr[j] > arr[j + 1]) {
@@ -112,7 +112,7 @@ for (let i = 0; i < arr.length; i++) {
 
 ***split():*** 字符串转数组
 
-```
+```js
 const CityStr = '北京,上海,广州,深圳';
 
 const Citys = CityStr.split(',');
@@ -122,7 +122,7 @@ console.log(Citys);         //  [ '北京', '上海', '广州', '深圳' ]
 
 ***charAt():*** 截取字符串第一个字符
 
-```
+```js
 const str = 'Welcome';
 
 const a = str.charAt();

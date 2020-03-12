@@ -7,7 +7,7 @@
 hasOwnProperty 是 JavaScript 中唯一一个处理属性，而不查找原型链的函数。
 
 例子：
-```
+```js
 Object.prototype.PSTR = '原型链属性';
 const TEST = {
   OSTR: '自身属性'
@@ -28,7 +28,7 @@ JavaScript 不会保护 hasOwnProperty 被非法占用(特殊字符： delete，
 就需要使用外部的 hasOwnProperty 函数来获取正确的结果。
 
 例子：
-```
+```js
 const Test = {
   hasOwnProperty: function() {
     return false
@@ -45,7 +45,7 @@ console.log({}.hasOwnProperty.call(Test, 'OSTR'));        // true
 使用 for in 遍历对象的属性的时候，它会不仅遍历对象自定义属性，还会遍历原型链上面的属性。
 
 例子：
-```
+```js
 Object.prototype.PSTR = '原型链属性';
 const TEST = {
   OSTR: '自身属性'

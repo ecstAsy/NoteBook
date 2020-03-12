@@ -2,7 +2,7 @@
 
 配置文件 settings.json
 
-```
+```js
 {
   "workbench.colorTheme": "Boxy Monokai",
   "workbench.iconTheme": "vscode-icons-mac",

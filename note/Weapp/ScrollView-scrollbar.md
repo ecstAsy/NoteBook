@@ -7,7 +7,7 @@
 
 在 app.wxss 文件里面添加以下代码
 
-```
+```css
 ::-webkit-scrollbar{
   width: 0;
   height: 0;

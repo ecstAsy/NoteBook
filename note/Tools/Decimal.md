@@ -13,7 +13,7 @@
 ## 代码
 
 __补齐两位小数__
-```
+```js
 function Decimal(x) {
   let f = parseFloat(x);
   // eslint-disable-next-line no-restricted-globals
@@ -36,7 +36,7 @@ function Decimal(x) {
 
 __转成金钱计数格式__
 
-```
+```js
 const ThousandNum = num => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 const money = ThousandNum(20190214.34);
 console.log(money);   // 20,190,214
