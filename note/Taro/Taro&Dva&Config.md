@@ -40,7 +40,7 @@
 
 ***dva.js***
 
-```
+```js
 import Taro from '@tarojs/taro';
 import { create } from 'dva-core';
 import { createLogger } from 'redux-logger';
@@ -86,7 +86,7 @@ export default {
 
 ***app.js***
 
-```
+```js
 import '@tarojs/async-await';
 import Taro, { Component } from '@tarojs/taro';
 import { Provider } from '@tarojs/redux';
@@ -155,7 +155,7 @@ Taro.render(<App />, document.getElementById('app'))
 
 ***common.js***
 
-```
+```js
 import Taro from '@tarojs/taro';
 import { getTime } from '../utils/Public';
 
@@ -188,7 +188,7 @@ export default {
 
 ***index.js***
 
-```
+```js
 import common from './common';
 
 export default [
