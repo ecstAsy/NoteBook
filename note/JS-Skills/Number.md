@@ -47,7 +47,7 @@ console.log(num1, num2, num3, num4);   // num1 num2 num3 num4 => 0 0 0 169
 ###### 时间戳
 
 ```js
-const timestamp = +newDate("2019-02-14");
+const timestamp = +new Date("2019-02-14");
 
 console.log(timestamp);      // timestamp => 1583462816147
 ```
