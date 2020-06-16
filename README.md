@@ -15,6 +15,7 @@
 - [递归取值](/note/JavaScript/JS-递归取值.md)
 - [冷知识点积累](/note/JavaScript/JS-study.md)
 - [JS继承](/note/JavaScript/JS-继承.md)
+- [Moment](/note/JavaScript/JS-Moment.md)
 
 ## JS开发技巧篇
 - [① String(字符串)篇](/note/JS-Skills/String.md)
