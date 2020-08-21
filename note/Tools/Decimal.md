@@ -42,3 +42,20 @@ const money = ThousandNum(20190214.34);
 console.log(money);   // 20,190,214
 ```
 
+
+__金额计算（精确到分，不足一分向上进一）__
+
+```js
+function toPrice2(x) {
+  let f = parseFloat(x);
+  // eslint-disable-next-line no-restricted-globals
+  if (isNaN(f)) {
+    return false;
+  }
+  let rs = f.toString().split('.');
+  if (rs.length !== 1 && rs[1].length > 2) {
+    f = Math.ceil(x * 100) / 100;
+  }
+  return f;
+}
+```
