@@ -2,6 +2,7 @@
 
 ## JavaScript
 
+- [js常用方法](/note/JavaScript/JS-RegularFunction.md)
 - [this的指向](/note/JavaScript/JS-this.md)
 - [hasOwnProperty](/note/JavaScript/JS-hasOwnProperty.md)
 - [closure（闭包）](/note/JavaScript/JS-closure.md)
