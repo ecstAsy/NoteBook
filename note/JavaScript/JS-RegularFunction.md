@@ -108,6 +108,56 @@ for (let i = 0; i < arr.length; i++) {
 }
 ```
 
+***Math:*** 数组取最大最小值
+
+```js
+const arr = [2, 5, 6, 10, 22];
+
+const max = Math.max(...arr);
+
+console.log(max);          // 22
+
+const min = Math.min(...arr);
+
+console.log(min);          // 2
+```
+
+***reduce:*** 数组求和
+
+```js
+const users = [
+  { name: 'John', age: 34 },
+  { name: 'Amy', age: 20 },
+  { name: 'camperCat', age: 10 }
+];
+
+const sumOfAges = users.reduce((sum, user) => sum + user.age, 0);
+
+console.log(sumOfAges); // 64.
+```
+
+***every:*** 验证数组每个元素
+
+```js
+var numbers = [1, 5, 8, 0, 10, 11];
+
+numbers.every(function(currentValue) {
+  return currentValue < 10;
+});
+
+// Returns false
+```
+
+***some:*** 验证数组每个元素
+
+```js
+var numbers = [10, 50, 8, 220, 110, 11];
+numbers.some(function(currentValue) {
+  return currentValue < 10;
+});
+// Returns true
+```
+
 ### String
 
 ***split():*** 字符串转数组
